@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ThemeProject</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ThemeProject.styles.css" asp-append-version="true" /> *@
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="~/themeContent/assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="~/themeContent/assets/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/themeContent/assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="~/themeContent/assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="~/themeContent/assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="~/themeContent/assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="~/themeContent/assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="~/themeContent/assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/themeContent/assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="~/themeContent/assets/js/plugins/ui/prism.min.js"></script>
+
+    <script type="text/javascript" src="~/themeContent/assets/js/core/app.js"></script>
+    <script type="text/javascript" src="~/themeContent/assets/js/pages/sidebar_detached_sticky_native.js"></script>
+    <!-- /theme JS files -->
+</head>
+<body>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - ThemeProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script> *@
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
