@@ -18,7 +18,17 @@ namespace ThemeProject.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+		public IActionResult DashBoard()
+		{
+			return View();
+		}
+
+		public IActionResult LayoutNavbarFixed()
+		{
+			return View();
+		}
+
+		public IActionResult Privacy()
         {
             return View();
         }
